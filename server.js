@@ -6,7 +6,7 @@ require('dotenv').config();
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(cors({ origin: 'http://localhost:3000' })); // Adjust if needed
+app.use(cors({ origin: 'https://momentscape-phi.vercel.app/' })); // Adjust if needed
 
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
